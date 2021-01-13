@@ -6,7 +6,15 @@ ruby '2.7.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'bcrypt'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 gem 'bootstrap-sass'
+#ドロップダウン開かないから追加
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'rake' , '13.0.3'
+#
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4'
 # Use Puma as the app server
@@ -54,7 +62,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.20.0'
+  #gem 'pg', '1.2.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
